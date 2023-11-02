@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/rps.css">
+    <title>Sydney's RPS</title>
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="score playerScore">
+            <p>Your score</p>
+            <h1>0</h1>
+        </div>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
+        <div class="score botScore">
+            <p>Bot's score</p>
+            <h1>0</h1>
+        </div>
+    </div>
+
+    <div class="hands">
+        <div class="hand rock">
+            <img src="../imgs/rock.png" onclick="userHand('rock')">
+        </div>
+        <div class="hand paper">
+            <img src="../imgs/paper.png" onclick="userHand('paper')">
+        </div>
+        <div class="hand scissors">
+            <img src="../imgs/scissors.png" onclick="userHand('scissors')">
+        </div>
+    </div>
+
+    <div class="winner">
+        <div class="playerHand">
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+                <img id="userPickImage" src="../imgs/rock.png">
+            </div>
+        </div>
+        <div class="result">
+            <h1>YOU WIN!</h1>
+            <div class="newGame" onclick="playAgain()">Play again?</div>
+        </div>
+        <div class="botHand">
+            <h1>BOT PICKED</h1>
+            <div class="handImageContainer">
+                <img id="botPickImage" src="../imgs/scissors.png">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../scripts/rps.js"></script>
+</body>
+</html>

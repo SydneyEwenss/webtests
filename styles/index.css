@@ -1,0 +1,61 @@
+@font-face {
+    src: url(fonts/MinecraftRegular-Bmg3.otf);
+    font-family: minecraft;
+}
+
+body {
+    font-family: minecraft;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    height: 100vh;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%,
+        #1c1d2b 0%,
+        #121216 100%
+    );
+}
+
+.icons img {
+    margin: 0px 8%;
+}
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.btnWrapper {
+    padding: 50px;
+}
+
+.appBtn {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s;
+    margin: 50px 50px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.appBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.appBtn > div {
+    flex: 1;
+}
+
+.appBtn:hover {
+    transform: translate3d(0px, -4px, 0px);
+}
